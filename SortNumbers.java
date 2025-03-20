@@ -5,24 +5,24 @@ public class SortNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // รับจำนวน N
+       
         System.out.print("ป้อนจำนวนตัวเลขที่ต้องการ: ");
         int N = scanner.nextInt();
 
-        // สร้างอาร์เรย์เพื่อเก็บตัวเลข
+        
         int[] numbers = new int[N];
 
-        // รับค่าตัวเลขจากผู้ใช้
+      
         System.out.println("ป้อนตัวเลขทั้งหมด " + N + " ตัว:");
         for (int i = 0; i < N; i++) {
             System.out.print("ตัวเลขที่ " + (i + 1) + ": ");
             numbers[i] = scanner.nextInt();
         }
 
-        // เรียงลำดับจากน้อยไปมาก
+       
         Arrays.sort(numbers);
 
-        // แสดงผลลัพธ์
+        
         System.out.println("ตัวเลขที่เรียงลำดับจากน้อยไปมาก:");
         for (int i = 0; i < N; i++) {
             System.out.print(numbers[i] + " ");
