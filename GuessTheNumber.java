@@ -6,7 +6,7 @@ public class GuessTheNumber {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        // สุ่มตัวเลข 1-100
+        
         int numberToGuess = random.nextInt(100) + 1;
         int userGuess;
         int attempts = 0;
@@ -14,7 +14,7 @@ public class GuessTheNumber {
         System.out.println("ยินดีต้อนรับสู่เกมเดาตัวเลข!");
         System.out.println("ฉันได้สุ่มตัวเลขระหว่าง 1 ถึง 100 แล้ว ลองเดาดูว่าเป็นเลขอะไร!");
 
-        // รับค่าจากผู้ใช้จนกว่าจะทายถูก
+        
         do {
             System.out.print("ทายตัวเลข: ");
             userGuess = scanner.nextInt();
